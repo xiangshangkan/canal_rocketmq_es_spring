@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConfigurationProperties("es")
+@ConfigurationProperties("es.index")
 public class ElasticsearchIndexConfig {
 
     /**

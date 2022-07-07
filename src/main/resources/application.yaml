@@ -6,6 +6,6 @@ spring:
       uris: http://127.0.0.1:9200
       username: root
       password: root
-
 es:
-  unifiedOrderIndex: data_cube_platform_order_dev_20220624
+  index:
+    unifiedOrderIndex: data_cube_platform_order_dev_20220624

@@ -1,0 +1,119 @@
+PUT data_cube_platform_order_xxxxxxx/_mapping
+{
+  "properties": {
+    "business_line": {
+      "type": "short"
+    },
+    "customer_id": {
+      "type": "long"
+    },
+    "hashed_customer_phone_number": {
+      "type": "keyword"
+    },
+    "is_renewed": {
+      "type": "short"
+    },
+    "lbk_order": {
+      "type": "nested",
+      "properties": {
+        "admin_internal_id": {
+          "type": "long"
+        },
+        "class_id": {
+          "type": "long"
+        },
+        "created_at": {
+          "type": "date"
+        },
+        "is_deleted": {
+          "type": "short"
+        },
+        "owner_type": {
+          "type": "short"
+        },
+        "package_id": {
+          "type": "long"
+        },
+        "teacher_id": {
+          "type": "long"
+        },
+        "term_id": {
+          "type": "long"
+        }
+      }
+    },
+    "order_id": {
+      "type": "keyword"
+    },
+    "order_items": {
+      "type": "nested",
+      "properties": {
+        "placed_at": {
+          "type": "long"
+        },
+        "sku_name": {
+          "type": "keyword"
+        },
+        "sku_number": {
+          "type": "keyword"
+        },
+        "spu_number": {
+          "type": "keyword"
+        },
+        "title": {
+          "type": "keyword"
+        }
+      }
+    },
+    "order_type": {
+      "type": "short"
+    },
+    "owner_id": {
+      "type": "long"
+    },
+    "owner_type": {
+      "type": "short"
+    },
+    "payment_option": {
+      "type": "short"
+    },
+    "payments": {
+      "type": "nested",
+      "properties": {
+        "amount": {
+          "type": "double"
+        },
+        "paid_at": {
+          "type": "long"
+        },
+        "payment_method": {
+          "type": "short"
+        },
+        "state": {
+          "type": "integer"
+        },
+        "trade_id": {
+          "type": "keyword"
+        },
+        "updated_at": {
+          "type": "long"
+        }
+      }
+    },
+    "placed_at": {
+      "type": "long"
+    },
+    "placed_by_id": {
+      "type": "long"
+    },
+    "platform": {
+      "type": "short"
+    },
+    "state": {
+      "type": "integer"
+    },
+    "subtotal": {
+      "type": "double"
+    }
+  }
+}
