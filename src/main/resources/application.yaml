@@ -1,0 +1,12 @@
+server:
+  port: 9090
+spring:
+  elasticsearch:
+    rest:
+      #uris: http://172.16.1.120:9200
+      uris: http://127.0.0.1:9200
+      username: data_cube
+      password: ^JG5Gm7FYtoFY2Ky
+codemao:
+  es:
+    unifiedOrderIndex: data_cube_platform_order_dev_20220624
